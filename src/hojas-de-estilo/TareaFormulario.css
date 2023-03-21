@@ -1,0 +1,41 @@
+@import 'colores.css';
+
+.tarea-formulario{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.tarea-input{
+    width: 100%;
+    padding: 12px;
+    margin-right: 10px;
+    outline: none;
+    border: 3px solid var(--color5);
+
+    background-color: white; 
+    color: var(--color5);
+    font-size: 16px;
+}
+
+.tarea-input::placeholder{
+    color: var(--color5);
+    font-weight: 500;
+}
+
+.tarea-boton{
+    padding: 10px;
+    border: 2px solid var(--color5);
+    border-radius: 8px;
+    background-color: #0bffa9;
+    cursor: pointer;
+    color: var(--color5);
+    font-weight: 600;
+}
+
+.tarea-boton:hover{
+    transform: scale(110%);
+    animation: transform 1.5s ease-in-out;
+    font-weight: bold;
+}

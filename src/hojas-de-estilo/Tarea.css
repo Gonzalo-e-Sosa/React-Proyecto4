@@ -1,0 +1,35 @@
+@import 'colores.css';
+
+.tarea-contenedor{
+    width: 100%;
+    min-height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 8px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: var(--color5);
+    color: white;
+}
+
+.tarea-texto{
+    width: 100%;
+}
+
+.tarea-contenedor.completada{
+    background-color: #2a2a55;
+    text-decoration: line-through;
+}
+
+.tarea-contenedor-iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarea-icono-quitar{
+    font-size: 20px;
+}
