@@ -12,7 +12,6 @@ const ListaDeTareas = () => {
       const tareasActualizadas = [tarea, ...tareas];
       setTareas(tareasActualizadas);
       localStorage.tareas = JSON.stringify(tareasActualizadas);
-      console.log(localStorage.tareas);
     }
   };
   
@@ -31,17 +30,14 @@ const ListaDeTareas = () => {
     const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
     setTareas(tareasActualizadas);
     localStorage.tareas = JSON.stringify(tareasActualizadas);
-    console.log(localStorage.tareas);
   }
   
   window.onload = e => {
     console.log(localStorage.getItem('tareas'));
     if(localStorage.getItem('tareas') === null) {
       localStorage.tareas = JSON.stringify(tareas);
-      console.log(JSON.parse(localStorage.tareas));
     }
     else {
-      console.log(localStorage.tareas);
       setTareas(JSON.parse(localStorage.tareas));
       tareas.map(tarea => {
         <Tarea
