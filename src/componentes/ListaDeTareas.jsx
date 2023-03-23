@@ -38,16 +38,6 @@ const ListaDeTareas = () => {
     }
     else {
       setTareas(JSON.parse(localStorage.tareas));
-      tareas.map(tarea => {
-        <Tarea
-          key = {tarea.id}
-          id = {tarea.id}
-          texto = {tarea.texto}
-          completada = {tarea.completada}
-          completarTarea = {completarTarea}
-          eliminarTarea = {eliminarTarea}
-        />
-      })
     }
   }
 
