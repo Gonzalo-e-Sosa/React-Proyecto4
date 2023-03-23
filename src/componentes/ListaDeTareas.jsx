@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import TareaFormulario from './TareaFormulario.jsx';
 import Tarea from './Tarea.jsx';
 
+window.onload = e => {
+  console.log("Página cargada correctamente.");
+}
+
 const ListaDeTareas = () => {
   const [tareas, setTareas] = useState([]);
 
