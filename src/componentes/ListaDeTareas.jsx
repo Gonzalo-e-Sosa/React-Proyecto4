@@ -43,23 +43,21 @@ const ListaDeTareas = () => {
 
   return(
     <>
-      <TareaFormulario
-          onSubmit = {agregarTarea} 
-        />
-        <div className = 'tareas-lista-contenedor'>
-          {
-            tareas.map(tarea =>
-              <Tarea 
-                key = {tarea.id}
-                id = {tarea.id}
-                texto = {tarea.texto}
-                completada = {tarea.completada}
-                completarTarea = {completarTarea}
-                eliminarTarea = {eliminarTarea}
-              />
-            )
-          }
-        </div>
+      <TareaFormulario onSubmit = {agregarTarea} />
+      <div className = 'tareas-lista-contenedor'>
+        {
+          tareas.map(tarea =>
+            <Tarea 
+              key = {tarea.id}
+              id = {tarea.id}
+              texto = {tarea.texto}
+              completada = {tarea.completada}
+              completarTarea = {completarTarea}
+              eliminarTarea = {eliminarTarea}
+            />
+          )
+        }
+      </div>
     </>
   );
 }
