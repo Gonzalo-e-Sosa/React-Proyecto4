@@ -33,7 +33,6 @@ const ListaDeTareas = () => {
   }
   
   window.onload = e => {
-    console.log(localStorage.getItem('tareas'));
     if(localStorage.getItem('tareas') === null) {
       localStorage.tareas = JSON.stringify(tareas);
     }
